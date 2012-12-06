@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A7594C11668953D00FF5050 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7594A91668953D00FF5050 /* NSObject+SBJson.m */; };
+		2A7594C21668953D00FF5050 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7594AC1668953D00FF5050 /* SBJsonParser.m */; };
+		2A7594C31668953D00FF5050 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7594AE1668953D00FF5050 /* SBJsonStreamParser.m */; };
+		2A7594C41668953D00FF5050 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7594B01668953D00FF5050 /* SBJsonStreamParserAccumulator.m */; };
+		2A7594C51668953D00FF5050 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7594B21668953D00FF5050 /* SBJsonStreamParserAdapter.m */; };
+		2A7594C61668953D00FF5050 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7594B41668953D00FF5050 /* SBJsonStreamParserState.m */; };
+		2A7594C71668953D00FF5050 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7594B61668953D00FF5050 /* SBJsonStreamWriter.m */; };
+		2A7594C81668953D00FF5050 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7594B81668953D00FF5050 /* SBJsonStreamWriterAccumulator.m */; };
+		2A7594C91668953D00FF5050 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7594BA1668953D00FF5050 /* SBJsonStreamWriterState.m */; };
+		2A7594CA1668953D00FF5050 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7594BC1668953D00FF5050 /* SBJsonTokeniser.m */; };
+		2A7594CB1668953D00FF5050 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7594BE1668953D00FF5050 /* SBJsonUTF8Stream.m */; };
+		2A7594CC1668953D00FF5050 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7594C01668953D00FF5050 /* SBJsonWriter.m */; };
+		2A7594CF1668A24200FF5050 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7594CE1668A24200FF5050 /* AVFoundation.framework */; };
+		2AA193E61668910F00812578 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA193E51668910F00812578 /* UIKit.framework */; };
+		2AA193E81668910F00812578 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA193E71668910F00812578 /* Foundation.framework */; };
+		2AA193EA1668910F00812578 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA193E91668910F00812578 /* CoreGraphics.framework */; };
+		2AA193F01668910F00812578 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AA193EE1668910F00812578 /* InfoPlist.strings */; };
+		2AA193F21668910F00812578 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA193F11668910F00812578 /* main.m */; };
+		2AA193F61668910F00812578 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA193F51668910F00812578 /* AppDelegate.m */; };
+		2AA193F81668910F00812578 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AA193F71668910F00812578 /* Default.png */; };
+		2AA193FA1668910F00812578 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AA193F91668910F00812578 /* Default@2x.png */; };
+		2AA193FC1668910F00812578 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AA193FB1668910F00812578 /* Default-568h@2x.png */; };
+		2AA193FF1668910F00812578 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA193FE1668910F00812578 /* MasterViewController.m */; };
+		2AA194021668910F00812578 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA194011668910F00812578 /* DetailViewController.m */; };
+		2AA194051668910F00812578 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AA194031668910F00812578 /* MasterViewController.xib */; };
+		2AA194081668910F00812578 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AA194061668910F00812578 /* DetailViewController.xib */; };
+		2AA194101668910F00812578 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA1940F1668910F00812578 /* SenTestingKit.framework */; };
+		2AA194111668910F00812578 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA193E51668910F00812578 /* UIKit.framework */; };
+		2AA194121668910F00812578 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA193E71668910F00812578 /* Foundation.framework */; };
+		2AA1941A1668910F00812578 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AA194181668910F00812578 /* InfoPlist.strings */; };
+		2AA1941D1668910F00812578 /* TaylorswiftTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA1941C1668910F00812578 /* TaylorswiftTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2AA194131668910F00812578 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AA193D81668910F00812578 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AA193E01668910F00812578;
+			remoteInfo = Taylorswift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A7594A81668953D00FF5050 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		2A7594A91668953D00FF5050 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		2A7594AA1668953D00FF5050 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		2A7594AB1668953D00FF5050 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		2A7594AC1668953D00FF5050 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		2A7594AD1668953D00FF5050 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		2A7594AE1668953D00FF5050 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		2A7594AF1668953D00FF5050 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		2A7594B01668953D00FF5050 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		2A7594B11668953D00FF5050 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		2A7594B21668953D00FF5050 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		2A7594B31668953D00FF5050 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		2A7594B41668953D00FF5050 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		2A7594B51668953D00FF5050 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		2A7594B61668953D00FF5050 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		2A7594B71668953D00FF5050 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		2A7594B81668953D00FF5050 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		2A7594B91668953D00FF5050 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		2A7594BA1668953D00FF5050 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		2A7594BB1668953D00FF5050 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		2A7594BC1668953D00FF5050 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		2A7594BD1668953D00FF5050 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		2A7594BE1668953D00FF5050 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		2A7594BF1668953D00FF5050 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		2A7594C01668953D00FF5050 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		2A7594CE1668A24200FF5050 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2AA193E11668910F00812578 /* Taylorswift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taylorswift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AA193E51668910F00812578 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2AA193E71668910F00812578 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2AA193E91668910F00812578 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2AA193ED1668910F00812578 /* Taylorswift-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Taylorswift-Info.plist"; sourceTree = "<group>"; };
+		2AA193EF1668910F00812578 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2AA193F11668910F00812578 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2AA193F31668910F00812578 /* Taylorswift-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Taylorswift-Prefix.pch"; sourceTree = "<group>"; };
+		2AA193F41668910F00812578 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2AA193F51668910F00812578 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2AA193F71668910F00812578 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2AA193F91668910F00812578 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2AA193FB1668910F00812578 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2AA193FD1668910F00812578 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		2AA193FE1668910F00812578 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		2AA194001668910F00812578 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		2AA194011668910F00812578 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		2AA194041668910F00812578 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
+		2AA194071668910F00812578 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+		2AA1940E1668910F00812578 /* TaylorswiftTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaylorswiftTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AA1940F1668910F00812578 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2AA194171668910F00812578 /* TaylorswiftTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TaylorswiftTests-Info.plist"; sourceTree = "<group>"; };
+		2AA194191668910F00812578 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2AA1941B1668910F00812578 /* TaylorswiftTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaylorswiftTests.h; sourceTree = "<group>"; };
+		2AA1941C1668910F00812578 /* TaylorswiftTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaylorswiftTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AA193DE1668910F00812578 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A7594CF1668A24200FF5050 /* AVFoundation.framework in Frameworks */,
+				2AA193E61668910F00812578 /* UIKit.framework in Frameworks */,
+				2AA193E81668910F00812578 /* Foundation.framework in Frameworks */,
+				2AA193EA1668910F00812578 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA1940A1668910F00812578 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AA194101668910F00812578 /* SenTestingKit.framework in Frameworks */,
+				2AA194111668910F00812578 /* UIKit.framework in Frameworks */,
+				2AA194121668910F00812578 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A7594A71668953D00FF5050 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2A7594A81668953D00FF5050 /* NSObject+SBJson.h */,
+				2A7594A91668953D00FF5050 /* NSObject+SBJson.m */,
+				2A7594AA1668953D00FF5050 /* SBJson.h */,
+				2A7594AB1668953D00FF5050 /* SBJsonParser.h */,
+				2A7594AC1668953D00FF5050 /* SBJsonParser.m */,
+				2A7594AD1668953D00FF5050 /* SBJsonStreamParser.h */,
+				2A7594AE1668953D00FF5050 /* SBJsonStreamParser.m */,
+				2A7594AF1668953D00FF5050 /* SBJsonStreamParserAccumulator.h */,
+				2A7594B01668953D00FF5050 /* SBJsonStreamParserAccumulator.m */,
+				2A7594B11668953D00FF5050 /* SBJsonStreamParserAdapter.h */,
+				2A7594B21668953D00FF5050 /* SBJsonStreamParserAdapter.m */,
+				2A7594B31668953D00FF5050 /* SBJsonStreamParserState.h */,
+				2A7594B41668953D00FF5050 /* SBJsonStreamParserState.m */,
+				2A7594B51668953D00FF5050 /* SBJsonStreamWriter.h */,
+				2A7594B61668953D00FF5050 /* SBJsonStreamWriter.m */,
+				2A7594B71668953D00FF5050 /* SBJsonStreamWriterAccumulator.h */,
+				2A7594B81668953D00FF5050 /* SBJsonStreamWriterAccumulator.m */,
+				2A7594B91668953D00FF5050 /* SBJsonStreamWriterState.h */,
+				2A7594BA1668953D00FF5050 /* SBJsonStreamWriterState.m */,
+				2A7594BB1668953D00FF5050 /* SBJsonTokeniser.h */,
+				2A7594BC1668953D00FF5050 /* SBJsonTokeniser.m */,
+				2A7594BD1668953D00FF5050 /* SBJsonUTF8Stream.h */,
+				2A7594BE1668953D00FF5050 /* SBJsonUTF8Stream.m */,
+				2A7594BF1668953D00FF5050 /* SBJsonWriter.h */,
+				2A7594C01668953D00FF5050 /* SBJsonWriter.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2AA193D61668910F00812578 = {
+			isa = PBXGroup;
+			children = (
+				2A7594CE1668A24200FF5050 /* AVFoundation.framework */,
+				2AA193EB1668910F00812578 /* Taylorswift */,
+				2AA194151668910F00812578 /* TaylorswiftTests */,
+				2AA193E41668910F00812578 /* Frameworks */,
+				2AA193E21668910F00812578 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2AA193E21668910F00812578 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AA193E11668910F00812578 /* Taylorswift.app */,
+				2AA1940E1668910F00812578 /* TaylorswiftTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AA193E41668910F00812578 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AA193E51668910F00812578 /* UIKit.framework */,
+				2AA193E71668910F00812578 /* Foundation.framework */,
+				2AA193E91668910F00812578 /* CoreGraphics.framework */,
+				2AA1940F1668910F00812578 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2AA193EB1668910F00812578 /* Taylorswift */ = {
+			isa = PBXGroup;
+			children = (
+				2AA193F41668910F00812578 /* AppDelegate.h */,
+				2AA193F51668910F00812578 /* AppDelegate.m */,
+				2AA193FD1668910F00812578 /* MasterViewController.h */,
+				2AA193FE1668910F00812578 /* MasterViewController.m */,
+				2AA194001668910F00812578 /* DetailViewController.h */,
+				2AA194011668910F00812578 /* DetailViewController.m */,
+				2AA194031668910F00812578 /* MasterViewController.xib */,
+				2AA194061668910F00812578 /* DetailViewController.xib */,
+				2AA193EC1668910F00812578 /* Supporting Files */,
+				2A7594A71668953D00FF5050 /* Classes */,
+			);
+			path = Taylorswift;
+			sourceTree = "<group>";
+		};
+		2AA193EC1668910F00812578 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2AA193ED1668910F00812578 /* Taylorswift-Info.plist */,
+				2AA193EE1668910F00812578 /* InfoPlist.strings */,
+				2AA193F11668910F00812578 /* main.m */,
+				2AA193F31668910F00812578 /* Taylorswift-Prefix.pch */,
+				2AA193F71668910F00812578 /* Default.png */,
+				2AA193F91668910F00812578 /* Default@2x.png */,
+				2AA193FB1668910F00812578 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2AA194151668910F00812578 /* TaylorswiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				2AA1941B1668910F00812578 /* TaylorswiftTests.h */,
+				2AA1941C1668910F00812578 /* TaylorswiftTests.m */,
+				2AA194161668910F00812578 /* Supporting Files */,
+			);
+			path = TaylorswiftTests;
+			sourceTree = "<group>";
+		};
+		2AA194161668910F00812578 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2AA194171668910F00812578 /* TaylorswiftTests-Info.plist */,
+				2AA194181668910F00812578 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2AA193E01668910F00812578 /* Taylorswift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AA194201668910F00812578 /* Build configuration list for PBXNativeTarget "Taylorswift" */;
+			buildPhases = (
+				2AA193DD1668910F00812578 /* Sources */,
+				2AA193DE1668910F00812578 /* Frameworks */,
+				2AA193DF1668910F00812578 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Taylorswift;
+			productName = Taylorswift;
+			productReference = 2AA193E11668910F00812578 /* Taylorswift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2AA1940D1668910F00812578 /* TaylorswiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AA194231668910F00812578 /* Build configuration list for PBXNativeTarget "TaylorswiftTests" */;
+			buildPhases = (
+				2AA194091668910F00812578 /* Sources */,
+				2AA1940A1668910F00812578 /* Frameworks */,
+				2AA1940B1668910F00812578 /* Resources */,
+				2AA1940C1668910F00812578 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AA194141668910F00812578 /* PBXTargetDependency */,
+			);
+			name = TaylorswiftTests;
+			productName = TaylorswiftTests;
+			productReference = 2AA1940E1668910F00812578 /* TaylorswiftTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2AA193D81668910F00812578 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Ryo Suzuki";
+			};
+			buildConfigurationList = 2AA193DB1668910F00812578 /* Build configuration list for PBXProject "Taylorswift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2AA193D61668910F00812578;
+			productRefGroup = 2AA193E21668910F00812578 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AA193E01668910F00812578 /* Taylorswift */,
+				2AA1940D1668910F00812578 /* TaylorswiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2AA193DF1668910F00812578 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AA193F01668910F00812578 /* InfoPlist.strings in Resources */,
+				2AA193F81668910F00812578 /* Default.png in Resources */,
+				2AA193FA1668910F00812578 /* Default@2x.png in Resources */,
+				2AA193FC1668910F00812578 /* Default-568h@2x.png in Resources */,
+				2AA194051668910F00812578 /* MasterViewController.xib in Resources */,
+				2AA194081668910F00812578 /* DetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA1940B1668910F00812578 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AA1941A1668910F00812578 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AA1940C1668910F00812578 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AA193DD1668910F00812578 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AA193F21668910F00812578 /* main.m in Sources */,
+				2AA193F61668910F00812578 /* AppDelegate.m in Sources */,
+				2AA193FF1668910F00812578 /* MasterViewController.m in Sources */,
+				2AA194021668910F00812578 /* DetailViewController.m in Sources */,
+				2A7594C11668953D00FF5050 /* NSObject+SBJson.m in Sources */,
+				2A7594C21668953D00FF5050 /* SBJsonParser.m in Sources */,
+				2A7594C31668953D00FF5050 /* SBJsonStreamParser.m in Sources */,
+				2A7594C41668953D00FF5050 /* SBJsonStreamParserAccumulator.m in Sources */,
+				2A7594C51668953D00FF5050 /* SBJsonStreamParserAdapter.m in Sources */,
+				2A7594C61668953D00FF5050 /* SBJsonStreamParserState.m in Sources */,
+				2A7594C71668953D00FF5050 /* SBJsonStreamWriter.m in Sources */,
+				2A7594C81668953D00FF5050 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				2A7594C91668953D00FF5050 /* SBJsonStreamWriterState.m in Sources */,
+				2A7594CA1668953D00FF5050 /* SBJsonTokeniser.m in Sources */,
+				2A7594CB1668953D00FF5050 /* SBJsonUTF8Stream.m in Sources */,
+				2A7594CC1668953D00FF5050 /* SBJsonWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA194091668910F00812578 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AA1941D1668910F00812578 /* TaylorswiftTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AA194141668910F00812578 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AA193E01668910F00812578 /* Taylorswift */;
+			targetProxy = 2AA194131668910F00812578 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2AA193EE1668910F00812578 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AA193EF1668910F00812578 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2AA194031668910F00812578 /* MasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AA194041668910F00812578 /* en */,
+			);
+			name = MasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		2AA194061668910F00812578 /* DetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AA194071668910F00812578 /* en */,
+			);
+			name = DetailViewController.xib;
+			sourceTree = "<group>";
+		};
+		2AA194181668910F00812578 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AA194191668910F00812578 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2AA1941E1668910F00812578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2AA1941F1668910F00812578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2AA194211668910F00812578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Taylorswift/Taylorswift-Prefix.pch";
+				INFOPLIST_FILE = "Taylorswift/Taylorswift-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2AA194221668910F00812578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Taylorswift/Taylorswift-Prefix.pch";
+				INFOPLIST_FILE = "Taylorswift/Taylorswift-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2AA194241668910F00812578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Taylorswift.app/Taylorswift";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Taylorswift/Taylorswift-Prefix.pch";
+				INFOPLIST_FILE = "TaylorswiftTests/TaylorswiftTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2AA194251668910F00812578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Taylorswift.app/Taylorswift";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Taylorswift/Taylorswift-Prefix.pch";
+				INFOPLIST_FILE = "TaylorswiftTests/TaylorswiftTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AA193DB1668910F00812578 /* Build configuration list for PBXProject "Taylorswift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AA1941E1668910F00812578 /* Debug */,
+				2AA1941F1668910F00812578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AA194201668910F00812578 /* Build configuration list for PBXNativeTarget "Taylorswift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AA194211668910F00812578 /* Debug */,
+				2AA194221668910F00812578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AA194231668910F00812578 /* Build configuration list for PBXNativeTarget "TaylorswiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AA194241668910F00812578 /* Debug */,
+				2AA194251668910F00812578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2AA193D81668910F00812578 /* Project object */;
+}
